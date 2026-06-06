@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    padding-top: 71px;
+    padding-bottom: 66px;
+    padding-left: 147px;
+    padding-right: 147px;
+}
+
+.nav {
+    display: flex;
+    column-gap: 99px;
+    margin-bottom: 86px; 
+    justify-content: center; 
+
+    a {
+
+        font-family: 'Playfair Display', serif;
+        text-decoration: none;
+        color: #7D7D7D; 
+        text-transform: uppercase;
+        transition: color 1s;
+    }
+
+
+}
+
+    a:hover {
+        color: #03A9F4;
+    }
+
