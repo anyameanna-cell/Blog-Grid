@@ -32,14 +32,14 @@ body {
 .nav a {
     text-decoration: none;
     color: var(--mainColor);
-    font-family: "Playfair Display", sans-serif;
+    font-family: "Playfair Display", serif; /* Виправлено на serif */
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s ease;
 }
 
-.nav a:hover{
+.nav a:hover {
     color: var(--mainHover);
 }
 
@@ -49,6 +49,13 @@ main {
     column-gap: 60px;
     row-gap: 80px;
     margin-bottom: 80px;
+}
+
+/* Адаптивність для мобільних (опціонально, щоб сітка не ламалася на смартфонах) */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
 }
 
 .post {
@@ -105,7 +112,7 @@ main {
     padding: 0;               
     line-height: 60px;       
     text-align: center;       
-    border: 1px, solid #626262;
+    border: 1px solid #626262; /* Виправлено: видалено кому */
     background: transparent;
     color: #626262;
     
@@ -116,15 +123,8 @@ main {
     opacity: 1;
     transition: all 0.3s ease;
 }
+
 .load-more button:hover {
     background-color: #626262;
     color: #ffffff;
 }
-
-
-}
-
-    a:hover {
-        color: #03A9F4;
-    }
-
